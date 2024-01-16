@@ -1,49 +1,52 @@
 package juancho;
 
 /**
- * A class to store a rectangle, it also calculates area and perimeter
+ * A class to store a rectangle, it also calculates area and perimeter.
  */
 public class Rectangle {
-  final private double width;
-  final private double height;
+  private final double width;
+  private final double height;
 
-  Rectangle(double width, double height){
+  Rectangle(double width, double height) {
     this.width = width;
     this.height = height;
   }
 
   /**
-   * getWidth()
+   * getWidth().
+   *
    * @return double
    */
-  public double getWidth(){
+  public double getWidth() {
     return this.width;
   }
 
   /**
-   * getHeight()
+   * getHeight().
    *
    * @return double
    */
-  public double getHeight(){
+  public double getHeight() {
     return this.height;
   }
 
   /**
    * getArea()
    * this computes the area of the rectangle.
+   *
    * @return double
    */
-  public double getArea(){
+  public double getArea() {
     return this.width * this.height;
   }
 
   /**
    * getPerimeter()
    * This computes the perimeter of the rectangle.
+   *
    * @return double
    */
-  public double getPerimeter(){
+  public double getPerimeter() {
     return 2.0 * this.width + 2.0 * this.height;
   }
 }
